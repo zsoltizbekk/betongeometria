@@ -1,0 +1,515 @@
+:root {
+  --main-bg-color: #f7f7f7;
+  --main-font-color: #4a4543;
+}
+
+@font-face {
+  font-family: "saira_extra_light";
+  src: url("../assets/Saira_Condensed/SairaCondensed-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "barlow_extra_light";
+  src: url("../assets/Barlow_Condensed/BarlowCondensed-ExtraLight.ttf");
+}
+
+#root,
+html {
+  background-color: var(--main-bg-color);
+}
+
+.container_under_construction {
+  margin: auto;
+  width: 100%;
+  min-width: 460px;
+  max-width: 1200px;
+  position: relative;
+  text-align: center;
+  color: rgb(98, 98, 98);
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3.5vw;
+}
+
+.centered {
+  background-color: rgba(30, 30, 30, 0.811);
+  color: #349da1;
+  border-radius: 10px;
+}
+
+.img_under_construction {
+  width: 100%;
+  /* opacity: 0.3; */
+}
+
+.footerDiv {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: center;
+  align-self: center;
+  height: 60px;
+  width: 100vw;
+  max-width: 1200px;
+  margin: auto;
+  font-size: max(1.5vw, 12px);
+  color: #dda951;
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(35, 35, 35);
+}
+
+/* .footerDiv {
+  margin: 0 auto;
+  justify-self: center;
+  min-width: 460px;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: max(1.5vw, 12px);
+  color: #dda951;
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(35, 35, 35);
+  height: 80px;
+} */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+  margin-left: 10px;
+  align-self: center;
+}
+
+.bottom-right {
+  margin-right: 10px;
+  align-self: center;
+}
+
+.bottom-center {
+  align-self: center;
+}
+.bottom-center > a,
+.bottom-center > a:link,
+.bottom-center > a:visited,
+.bottom-center > a:active {
+  text-decoration: none;
+  color: #dda951;
+}
+
+@media screen and (min-width: 1200px) {
+  .container_under_construction {
+    font-size: 45.5px;
+  }
+  .footerDiv {
+    font-size: 19.5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container_under_construction {
+    font-size: 21px;
+  }
+}
+
+/* StartingPage */
+.starting_page_page {
+  max-width: 1200px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  height: calc(100vh - 75px);
+}
+
+.starting_page_container {
+  max-width: 1200px;
+  margin: auto;
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3.5vw;
+  height: calc(100vh - 75px);
+  color: var(--main-font-color);
+  background-color: var(--main-bg-color);
+}
+
+#root {
+  width: 100vw;
+}
+
+/* .starting_page_header {
+  max-width: 1200px;
+  margin: 20px;
+  margin-top: 0px;
+  padding-top: 10px;
+} */
+
+/* .starting_page_img {
+  height: 80px;
+} */
+
+.starting_page_body {
+  max-width: 1200px;
+  margin: 20px;
+  padding-top: 45px;
+  gap: 20px;
+  height: calc(100vh - 85px);
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "epitesztervezes epitesztervezes betontermekek betontermekek"
+    "epitesztervezes epitesztervezes betontermekek betontermekek"
+    "szolgaltatas iras betontermekek betontermekek";
+}
+
+.starting_page_epitesztervezes {
+  border: rgb(35, 35, 35) 5px solid;
+  background-image: url("../assets/starting_page_imgs/haz.jpg");
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-size: cover;
+  background-position-x: center;
+  color: var(--main-bg-color);
+  grid-area: epitesztervezes;
+
+  display: table;
+}
+.starting_page_betontermekek {
+  border: rgb(35, 35, 35) 5px solid;
+  background-image: url("../assets/starting_page_imgs/beton.jpg");
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-size: cover;
+  background-position: center;
+  color: var(--main-bg-color);
+  grid-area: betontermekek;
+
+  display: table;
+}
+
+.starting_page_epitesztervezes_content,
+.starting_page_betontermekek_content {
+  transition: 0.5s ease;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.811);
+  opacity: 0;
+}
+
+.starting_page_epitesztervezes_content:hover,
+.starting_page_betontermekek_content:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.starting_page_szolgaltatas {
+  border: rgb(35, 35, 35) 5px solid;
+  grid-area: szolgaltatas;
+}
+
+.szolgaltatas_logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin: 5px;
+}
+
+.szolgaltatas_logo_imgs {
+  width: 40px;
+}
+
+.starting_page_iras {
+  background-image: url("../assets/starting_page_imgs/tanacsadas.jpg");
+  background-size: cover;
+  background-position-x: center;
+  border: rgb(35, 35, 35) 5px solid;
+  grid-area: iras;
+}
+
+@media screen and (min-width: 1200px) {
+  .starting_page_container {
+    font-size: 45.5px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .starting_page_body {
+    margin: 10px;
+    gap: 10px;
+    height: calc(100vh - 130px);
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "epitesztervezes epitesztervezes"
+      "epitesztervezes epitesztervezes"
+      "betontermekek betontermekek"
+      "betontermekek betontermekek"
+      "betontermekek betontermekek"
+      "szolgaltatas iras";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .starting_page_container {
+    font-size: 21px;
+  }
+}
+
+/* EPITESZ */
+.epitesz_page {
+  max-width: 1200px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  height: calc(100vh - 75px);
+}
+
+.epitesz_container {
+  max-width: 1200px;
+  margin: auto;
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  height: 100vh;
+  color: var(--main-font-color);
+  background-color: var(--main-bg-color);
+}
+
+.epitesz_szolgaltatas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 1800px;
+  width: 100vw;
+  max-width: 1200px;
+}
+.epitesz_szolgaltatas_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 450px;
+  width: 100vw;
+  max-width: 1200px;
+}
+
+.epitesz_szolgaltatas_img,
+.epitesz_szolgaltatas_text {
+  max-width: 600px;
+}
+
+.epitesz_szolgaltatas_text {
+  align-self: center;
+}
+
+.epitesz_szolgaltatas_img {
+  width: 28vw;
+}
+
+.epitesz_szolgaltatas_img_1 {
+  background-image: url("../assets/epitesztervezes_imgs/1.jpg");
+}
+
+.epitesz_szolgaltatas_img_2 {
+  background-image: url("../assets/epitesztervezes_imgs/2.jpg");
+}
+
+.epitesz_szolgaltatas_img_3 {
+  background-image: url("../assets/epitesztervezes_imgs/3.jpg");
+}
+
+.epitesz_szolgaltatas_img_4 {
+  background-image: url("../assets/epitesztervezes_imgs/4.jpg");
+}
+
+.epitesz_szolgaltatas_img {
+  background-size: cover;
+  background-position-y: center;
+}
+
+.epitesz_text_div_1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 50px;
+}
+
+.epitesz_grid_text {
+  background-color: rgba(237, 237, 237, 0.749);
+  height: 40px;
+}
+
+.map-container {
+  width: 50%;
+  height: 30vh;
+}
+
+/* .footer {
+  background-color: var(--main-bg-color);
+  font-size: 15px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  bottom: 0;
+  height: 50px;
+  width: 100vw;
+  max-width: 1200px;
+} */
+
+.footer {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50px;
+  padding-top: 10px;
+  width: 100vw;
+  max-width: 1200px;
+}
+
+footer {
+  background-color: var(--main-font-color);
+  color: var(--main-bg-color);
+  font-size: 15px;
+  height: 35px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  max-width: 1200px;
+  bottom: 0;
+  margin: auto;
+}
+
+.footer_left,
+.footer_right,
+.footer_mid,
+.footer_mid > a {
+  background-color: var(--main-font-color);
+}
+
+.footer_mid > a:hover {
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+
+.footerBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--main-bg-color);
+}
+
+/* ASZF container */
+.aszf_page {
+  max-width: 1200px;
+  margin: auto;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+.aszf_container {
+  margin: 20px;
+}
+
+/* GDPR container */
+.gdpr_page {
+  max-width: 1200px;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+.gdpr_container {
+  height: calc(100vh - 100px);
+  margin: 20px;
+}
+
+/* Jogi nyilatkozat */
+.joginyilatkozat_page {
+  max-width: 1200px;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+.joginyilatkozat_container {
+  min-height: calc(100vh - 100px);
+  margin: 20px;
+  padding-bottom: 70px;
+}
+
+/* HEADER */
+/* .header {
+  width: 100vw;
+  max-width: 1200px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+} */
+
+.header {
+  width: 100vw;
+  height: 64px;
+  margin: auto;
+  top: 0;
+
+  font-size: 20px;
+}
+
+nav {
+  width: 100vw !important;
+  max-width: 1200px !important;
+  margin: auto !important;
+  background-color: var(--main-bg-color) !important;
+
+  border-bottom: solid 2px var(--main-font-color);
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+.me-auto > a,
+.nav-item > a,
+.dropdown-menu > a {
+  color: var(--main-font-color) !important;
+  font-size: 20px;
+}
