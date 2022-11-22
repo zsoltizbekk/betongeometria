@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/betongeometria/static/css/main.1573a790.css",
-    "main.js": "/betongeometria/static/js/main.d114cd4a.js",
+    "main.js": "/betongeometria/static/js/main.b90c5635.js",
     "static/media/kulteri1.jpg": "/betongeometria/static/media/kulteri1.15f3c8ae57ddecf8ee68.jpg",
     "static/media/underconstructions.jpg": "/betongeometria/static/media/underconstructions.77d7b81171a18bfebb4b.jpg",
     "static/media/bemutatkozas.jpg": "/betongeometria/static/media/bemutatkozas.96360217e66d603e4508.jpg",
@@ -41,10 +41,10 @@
     "static/media/enterior_logo.png": "/betongeometria/static/media/enterior_logo.98cdd7e0b2ac823a2f9a.png",
     "index.html": "/betongeometria/index.html",
     "main.1573a790.css.map": "/betongeometria/static/css/main.1573a790.css.map",
-    "main.d114cd4a.js.map": "/betongeometria/static/js/main.d114cd4a.js.map"
+    "main.b90c5635.js.map": "/betongeometria/static/js/main.b90c5635.js.map"
   },
   "entrypoints": [
     "static/css/main.1573a790.css",
-    "static/js/main.d114cd4a.js"
+    "static/js/main.b90c5635.js"
   ]
 }
