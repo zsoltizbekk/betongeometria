@@ -1,6 +1,5 @@
 {
   "name": "azepitesz_website",
-  "homepage": "http://zsoltizbekk.github.io/betongeometria",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,6 +17,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "http://zsoltizbekk.github.io/betongeometria",
   "scripts": {
     "start": "HTTPS=true SSL_CRT_FILE=./reactcert/cert.pem SSL_KEY_FILE=./reactcert/key.pem react-scripts start",
     "build": "react-scripts build",
