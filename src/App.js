@@ -6,8 +6,8 @@ import logo from "./assets/betongeometria.png";
 
 const App = () => {
   return (
-    <UnderConstruction />
-    //<RouteSwitch />
+    // <UnderConstruction />
+    <RouteSwitch />
   );
 };
 

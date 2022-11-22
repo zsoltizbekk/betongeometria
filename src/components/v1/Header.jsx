@@ -5,23 +5,24 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+const logo = require("../../assets/betongeometria.png");
+
 const Header = () => {
-
-
-
     return(
         <div className="header">
         <Navbar collapseOnSelect expand="sm" fixed="top">
             <Container>
-                <Navbar.Brand href="/">LOGO</Navbar.Brand>
+                <Navbar.Brand href="/"><img className="bgeoLogo" src={logo}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link href="/epitesz">Építésztervezés</Nav.Link>
                     <NavDropdown title="Betontermékek" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Bútorok</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Falburkolatok</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Kültéri elemek</NavDropdown.Item>
+                    <NavDropdown.Item href="/beton">Rólunk</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="/butor">Bútorok</NavDropdown.Item>
+                    <NavDropdown.Item href="/falburkolat">Falburkolatok</NavDropdown.Item>
+                    <NavDropdown.Item href="/kulterielemek">Kültéri elemek</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
                     </NavDropdown>
                 </Nav>

@@ -13,16 +13,36 @@
   src: url("../assets/Barlow_Condensed/BarlowCondensed-ExtraLight.ttf");
 }
 
+@font-face {
+  font-family: "barlow_semi_bold";
+  src: url("../assets/Barlow_Condensed/BarlowCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "helvetica_bold";
+  src: url("../assets/Helvetica/Helvetica-Bold.ttf");
+}
+
+@font-face {
+  font-family: "bree_light_oblique";
+  src: url("../assets/bree-2-cufonfonts/BreeLightOblique.otf");
+}
+
 #root,
 html {
   background-color: var(--main-bg-color);
 }
 
+.mainDiv {
+  max-width: 1200px;
+  min-width: 400px;
+}
+
 .container_under_construction {
   margin: auto;
   width: 100%;
-  min-width: 460px;
   max-width: 1200px;
+  min-width: 400px;
   position: relative;
   text-align: center;
   color: rgb(98, 98, 98);
@@ -52,6 +72,7 @@ html {
   height: 60px;
   width: 100vw;
   max-width: 1200px;
+  min-width: 400px;
   margin: auto;
   font-size: max(1.5vw, 12px);
   color: #dda951;
@@ -81,6 +102,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 10px;
 }
 
 .bottom-left {
@@ -109,13 +131,16 @@ html {
     font-size: 45.5px;
   }
   .footerDiv {
-    font-size: 19.5px;
+    font-size: 15px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .container_under_construction {
     font-size: 21px;
+  }
+  .footerDiv {
+    font-size: 10px;
   }
 }
 
@@ -130,22 +155,24 @@ html {
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
-  height: calc(100vh - 75px);
+  /* height: calc(100vh - 75px); */
 }
 
 .starting_page_container {
   max-width: 1200px;
   margin: auto;
+  right: 0;
+  left: 0;
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3.5vw;
-  height: calc(100vh - 75px);
+  /* height: calc(100vh - 75px); */
   color: var(--main-font-color);
   background-color: var(--main-bg-color);
 }
 
 #root {
-  width: 100vw;
+  width: 100%;
 }
 
 /* .starting_page_header {
@@ -161,10 +188,11 @@ html {
 
 .starting_page_body {
   max-width: 1200px;
-  margin: 20px;
-  padding-top: 45px;
+  width: 100vw;
+  margin: 10px auto;
+  padding-top: 20px;
   gap: 20px;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 154px);
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -196,7 +224,6 @@ html {
   background-position: center;
   color: var(--main-bg-color);
   grid-area: betontermekek;
-
   display: table;
 }
 
@@ -274,25 +301,24 @@ html {
 
 /* EPITESZ */
 .epitesz_page {
+  width: 100vw;
   max-width: 1200px;
-  margin: auto;
-  right: 0;
-  left: 0;
+  margin: 0 auto;
   background-color: var(--main-bg-color);
   color: var(--main-font-color);
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
-  height: calc(100vh - 75px);
 }
 
 .epitesz_container {
   max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
-  height: 100vh;
+  height: calc(100vh - 204px);
   color: var(--main-font-color);
   background-color: var(--main-bg-color);
 }
@@ -301,16 +327,16 @@ html {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 1800px;
-  width: 100vw;
+  /* height: 1800px; */
+  width: 100%;
   max-width: 1200px;
 }
 .epitesz_szolgaltatas_div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 450px;
-  width: 100vw;
+  /* height: 450px; */
+  width: 100%;
   max-width: 1200px;
 }
 
@@ -321,10 +347,22 @@ html {
 
 .epitesz_szolgaltatas_text {
   align-self: center;
+  width: 700px;
 }
 
 .epitesz_szolgaltatas_img {
-  width: 28vw;
+  height: 400px;
+  width: 350px;
+}
+
+.epitesz_szolgaltatas_text_1,
+.epitesz_szolgaltatas_text_2,
+.epitesz_szolgaltatas_text_3,
+.epitesz_szolgaltatas_text_4 {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
 .epitesz_szolgaltatas_img_1 {
@@ -359,9 +397,337 @@ html {
   height: 40px;
 }
 
-.map-container {
+.epitesz_szolgaltatas_4 {
+  margin-bottom: 50px;
+}
+
+/* .map-container {
   width: 50%;
-  height: 30vh;
+  height: 200px;
+} */
+
+/* BETON ROLUNK */
+.beton_page,
+.butor_page,
+.falburkolat_page,
+.kulterielemek_page {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--main-font-color);
+  background-color: var(--main-bg-color);
+}
+
+.beton_container {
+}
+
+.beton_title,
+.butor_title,
+.falburkolat_title,
+.kulterielemek_title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.beton_subtitle,
+.butor_subtitle,
+.falburkolat_subtitle,
+.kulterielemek_subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+
+  letter-spacing: 0.5px;
+}
+
+.beton_first_div {
+  background-image: url("../assets/betongeometria/bemutatkozas.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.beton_first_div_left,
+.beton_first_div_right {
+  width: 50%;
+}
+
+.beton_first_div_right {
+  background-color: rgba(230, 230, 230, 0.623);
+}
+
+.beton_first_line {
+  font-family: helvetica_bold, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+}
+
+.beton_first_div_text {
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin: 70px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.beton_contactBtn_div {
+  margin: auto;
+  justify-self: center;
+  width: 160px;
+}
+
+.contactBtn {
+  transition: 0.5s ease;
+  justify-self: center;
+  cursor: pointer;
+  border: none;
+  background-color: #fe6060;
+  padding: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-family: bree_light_oblique, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--main-bg-color);
+  font-size: 15px;
+}
+
+.contactBtn:hover {
+  transition: 0.5s ease;
+  background-color: #b44343;
+}
+
+/* BUTOR */
+
+.butor_first_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/butor1.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+}
+
+.butor_first_div_left {
+}
+
+.butor_first_div_left {
+  width: 33%;
+  background-color: rgba(230, 230, 230, 0.623);
+  margin: 35px;
+  padding: 25px;
+}
+
+.butor_first_div_text > a,
+.butor_first_div_text > a:active,
+.butor_first_div_text > a:hover,
+.butor_first_div_text > a:link {
+  color: var(--main-font-color);
+  text-decoration: underline;
+}
+
+.butor_first_line {
+  font-size: 16px;
+  letter-spacing: 5px;
+  font-family: barlow_semi_bold, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 65px;
+}
+
+.butor_first_div_text {
+  font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.butor_second_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/butor2.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 768px;
+}
+
+.butor_third_div {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background-image: url("../assets/betongeometria/butor3.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 623px;
+  display: flex;
+}
+
+.butor_third_div_left {
+  width: 71%;
+}
+
+.butor_third_div_right {
+  background-color: rgba(230, 230, 230, 0.623);
+  width: 29%;
+  padding: 20px;
+  padding-top: 35px;
+}
+
+.butor_third_div_text {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+/* FALBURKOLAT */
+
+.falburkolat_first_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/falburkolat1.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.falburkolat_first_div_left,
+.falburkolat_first_div_right {
+  width: 50%;
+}
+
+.falburkolat_first_div_right {
+  background-color: rgba(230, 230, 230, 0.623);
+  padding: 30px;
+  padding-bottom: 50px;
+  display: flex;
+}
+.falburkolat_first_div_text {
+  align-self: flex-end;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.falburkolat_second_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/falburkolat2.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 600px;
+}
+
+.falburkolat_third_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/falburkolat3.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.falburkolat_third_div_left {
+  width: 30%;
+  background-color: rgba(230, 230, 230, 0.623);
+  padding: 30px;
+}
+
+.falburkolat_third_div_text {
+  align-self: flex-end;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* KULTERI ELEMEK */
+
+.kulterielemek_first_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/kulteri1.jpg");
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+}
+
+.kulterielemek_first_div_left {
+  width: 70%;
+}
+
+.kulterielemek_first_div_right {
+  background-color: rgba(230, 230, 230, 0.623);
+  width: 30%;
+  margin: 20px;
+  padding: 30px;
+}
+
+.kulterielemek_first_div_text,
+.kulterielemek_third_div_text {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.kulterielemek_second_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/kulteri2.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 700px;
+}
+
+.kulterielemek_third_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/kulteri3.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.kulterielemek_third_div_left {
+  background-color: rgba(230, 230, 230, 0.623);
+  width: 40%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.kulterielemek_third_div_text {
+  margin-bottom: 30px;
+}
+
+.kulterielemek_third_div_btn {
+  margin-top: 20px;
+}
+
+.kulterielemek_fourth_div {
+  margin-top: 20px;
+  background-image: url("../assets/betongeometria/kulteri4.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 700px;
 }
 
 /* .footer {
@@ -397,7 +763,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100vw;
+  width: 100vw !important;
   max-width: 1200px;
   bottom: 0;
   margin: auto;
@@ -439,6 +805,9 @@ a:active {
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
 .aszf_container {
@@ -453,6 +822,9 @@ a:active {
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
 .gdpr_container {
@@ -468,6 +840,9 @@ a:active {
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
 .joginyilatkozat_container {
@@ -487,7 +862,6 @@ a:active {
 } */
 
 .header {
-  width: 100vw;
   height: 64px;
   margin: auto;
   top: 0;
@@ -503,8 +877,14 @@ nav {
 
   border-bottom: solid 2px var(--main-font-color);
 }
+
 .navbar-collapse {
   flex-grow: 0 !important;
+}
+
+.bgeoLogo {
+  height: 35px;
+  cursor: pointer;
 }
 
 .me-auto > a,
@@ -512,4 +892,8 @@ nav {
 .dropdown-menu > a {
   color: var(--main-font-color) !important;
   font-size: 20px;
+}
+.dropdown-menu > a:active {
+  background-color: var(--main-font-color);
+  color: var(--main-bg-color) !important;
 }
