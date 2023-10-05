@@ -1,8 +1,9 @@
 import React from "react";
-import UnderConstruction from "./components/UnderConstruction";
+//import UnderConstruction from "./components/UnderConstruction";
 import RouteSwitch from "./components/v1/RouteSwitch";
+//import RouteSwitch from "./components/v2/RouteSwitch";
 
-import logo from "./assets/betongeometria.png";
+//import logo from "./assets/betongeometria.png";
 
 const App = () => {
   return (

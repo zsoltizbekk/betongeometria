@@ -11,20 +11,18 @@ const Header = () => {
     return(
         <div className="header">
         <Navbar collapseOnSelect expand="sm" fixed="top">
-            <Container>
+            <Container className="navBarContainer">
                 <Navbar.Brand href="/"><img className="bgeoLogo" src={logo}/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link href="/epitesz">Építésztervezés</Nav.Link>
-                    <NavDropdown title="Betontermékek" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="/beton">Rólunk</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="/butor">Bútorok</NavDropdown.Item>
-                    <NavDropdown.Item href="/falburkolat">Falburkolatok</NavDropdown.Item>
-                    <NavDropdown.Item href="/kulterielemek">Kültéri elemek</NavDropdown.Item>
-                    {/* <NavDropdown.Divider /> */}
-                    </NavDropdown>
+                    <div className="navbar_divider_horizontal">|</div>
+                    <hr className="navbar_divider_vertical"></hr>
+                    <Nav.Link href="/beton">Betongeometria</Nav.Link>
+                    <Nav.Link href="/butor">Bútorok</Nav.Link>
+                    <Nav.Link href="/falburkolat">Falburkolatok</Nav.Link>
+                    <Nav.Link href="/kulterielemek">Kültéri elemek</Nav.Link>
                 </Nav>
                 {/* <Nav>
                     
@@ -38,6 +36,35 @@ const Header = () => {
             </Navbar>
         </div>
         
+
+        // <div className="header">
+        // <Navbar collapseOnSelect expand="sm" fixed="top">
+        //     <Container className="navBarContainer">
+        //         <Navbar.Brand href="/"><img className="bgeoLogo" src={logo}/></Navbar.Brand>
+        //         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        //         <Navbar.Collapse id="responsive-navbar-nav">
+        //         <Nav className="me-auto">
+        //             <Nav.Link href="/epitesz">Építésztervezés</Nav.Link>
+        //             <NavDropdown title="Betontermékek" id="collasible-nav-dropdown">
+        //             <NavDropdown.Item href="/beton">Rólunk</NavDropdown.Item>
+        //             <NavDropdown.Divider />
+        //             <NavDropdown.Item href="/butor">Bútorok</NavDropdown.Item>
+        //             <NavDropdown.Item href="/falburkolat">Falburkolatok</NavDropdown.Item>
+        //             <NavDropdown.Item href="/kulterielemek">Kültéri elemek</NavDropdown.Item>
+        //             {/* <NavDropdown.Divider /> */}
+        //             </NavDropdown>
+        //         </Nav>
+        //         {/* <Nav>
+                    
+        //             <Nav.Link href="#deets">More deets</Nav.Link>
+        //             <Nav.Link eventKey={2} href="#memes">
+        //             Dank memes
+        //             </Nav.Link>
+        //         </Nav> */}
+        //         </Navbar.Collapse>
+        //     </Container>
+        //     </Navbar>
+        // </div>
         
         // <div className="header">
         // <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">

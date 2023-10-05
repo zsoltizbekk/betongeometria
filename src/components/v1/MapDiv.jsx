@@ -3,7 +3,7 @@ import {useMemo} from "react";
 import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
 
 const MapDiv = () => {
-    const {isLoaded} = useLoadScript({googleMapsApiKey: "AIzaSyB5SaUvuKnqXhmQ7bpftMMjTlA29pCn1YM",});
+    const {isLoaded} = useLoadScript({googleMapsApiKey: "API",});
     const options = {mapId : "36f31000aff0e5c9"}
     if(!isLoaded) {
         return(<div>Loading...</div>)

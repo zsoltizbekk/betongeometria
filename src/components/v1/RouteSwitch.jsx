@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Epitesz from "./body/Epitesz";
 import Beton from "./body/Beton";
-import StartingPage from "./body/StartingPage";
-import Aszf from "./Aszf";
+//import StartingPage from "./body/StartingPage";
+import StartingPage2 from "./body/StartingPage2";
+import Impresszum from "./Impresszum";
 import Gdpr from "./Gdpr";
 import JogiNyilatkozat from "./Joginyilatkozat";
 import Butor from "./body/Butor";
@@ -14,10 +15,10 @@ const RouteSwitch = () => {
     return (
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<StartingPage />} />
+            <Route path="/" element={<StartingPage2 />} />
             <Route path="/epitesz" element={<Epitesz />} />
             <Route path="/beton" element={<Beton />} />
-            <Route path="/aszf" element={<Aszf />} />
+            <Route path="/impresszum" element={<Impresszum />} />
             <Route path="/gdpr" element={<Gdpr />} />
             <Route path="/joginyilatkozat" element={<JogiNyilatkozat />} />
             <Route path="/butor" element={<Butor />} />

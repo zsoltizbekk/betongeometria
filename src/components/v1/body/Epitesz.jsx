@@ -2,6 +2,20 @@ import React from "react";
 import {useMemo} from "react";
 import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
 
+                                
+import epitesz_szolgaltatas_1 from '../../../assets/epitesztervezes_logo/otthon_logo.png';
+import epitesz_szolgaltatas_2 from '../../../assets/epitesztervezes_logo/muvezetes_logo.png';
+import epitesz_szolgaltatas_3 from '../../../assets/epitesztervezes_logo/nagyberuhazas_logo.png';
+import epitesz_szolgaltatas_4 from '../../../assets/epitesztervezes_logo/koordinalas_logo.png';
+import epitesz_szolgaltatas_5 from '../../../assets/epitesztervezes_logo/enterior_logo.png';
+import epitesz_szolgaltatas_6 from '../../../assets/epitesztervezes_logo/tanacsadas_logo.png';
+import epitesz_szolgaltatas_7 from '../../../assets/epitesztervezes_logo/reszlettervezes_logo.png';
+import epitesz_szolgaltatas_8 from '../../../assets/epitesztervezes_logo/splash.png';
+
+import csapat_1 from '../../../assets/epitesztervezes_csapat/1.jpg';
+import csapat_2 from '../../../assets/epitesztervezes_csapat/2.jpg';
+import csapat_3 from '../../../assets/epitesztervezes_csapat/3.jpg';
+
 
 import RouteSwitch from "../RouteSwitch";
 
@@ -10,36 +24,144 @@ import Footer from "../Footer";
 import CarouselDiv from "../CarouselDiv";
 import MapDiv from "../MapDiv";
 
-//AIzaSyB5SaUvuKnqXhmQ7bpftMMjTlA29pCn1YM
-
 const Epitesz = () => { 
     return(
         <div className="epitesz_page">
             <Header />
             <div className="epitesz_container">
                 <div className="header-Bg-Div"></div>
-                <CarouselDiv />
                 <div className="epitesz_text_div_1">Az építészettel a jövőbe fektet!</div>
-                <div className="epitesz_szolgaltatas">
-                    <div className="epitesz_szolgaltatas_div epitesz_szolgaltatas_1">
-                        <div className="epitesz_szolgaltatas_img epitesz_szolgaltatas_img_1" ></div>
-                        <div className="epitesz_szolgaltatas_text epitesz_szolgaltatas_text_1" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    </div>
-                    <div className="epitesz_szolgaltatas_div epitesz_szolgaltatas_2">
-                        <div className="epitesz_szolgaltatas_text epitesz_szolgaltatas_text_2" >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                        <div className="epitesz_szolgaltatas_img epitesz_szolgaltatas_img_2"></div>
-                        
-                    </div>
-                    <div className="epitesz_szolgaltatas_div epitesz_szolgaltatas_3">
-                        <div className="epitesz_szolgaltatas_img epitesz_szolgaltatas_img_3"></div>
-                        <div className="epitesz_szolgaltatas_text epitesz_szolgaltatas_text_3" >Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
-                    </div>
-                    <div className="epitesz_szolgaltatas_div epitesz_szolgaltatas_4">
-                        <div className="epitesz_szolgaltatas_text epitesz_szolgaltatas_text_4" >At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </div>
-                        <div className="epitesz_szolgaltatas_img epitesz_szolgaltatas_img_4"></div>
+                <div className="epitesz_text_div_2">
+                    <div className="epitesz_szolgaltatas_text_1">
+                        Számunkra nincs kicsi vagy nagy feladat, ami Önnek fontos az nekünk is. Legyen az egy kisebb lakás felújítása, új családi otthon, vagy akár nagyobb léptékű beruházások, társasháztól az ipari- és középületekig.
+                        A tervezési folyamat részünkről mindig párbeszéd alapú, minden esetben a tervet addig csiszoljuk, amíg az adott jogszabályi kereteken belül a tisztelt Megbízónak megfelelő épület áll össze. Nincs megkötöttség a technológiák kapcsán sem, hagyományos építéstechnikától a legújabb anyagok alkalmazásáig minden szóba kerülhet. A mi feladatunk, hogy az előnyök és hátrányok ismertetését követően a megfelelő építtetői döntést segítsük szakmai tudásunkkal. Cél, hogy a tervezés során minden lépés miértjére választ kapjon az építtető, és megértse a különböző folyamatokat, mit miért tervezünk úgy, ahogy. Nincs rossz kérdés, csak az, amit nem tesznek fel.
                     </div>
                 </div>
-                <MapDiv />
+                <CarouselDiv />
+                <div className="epitesz_text_div_3">
+                    <div className="epitesz_szolgaltatas_text_1">
+                        Szolgáltatásunk a műszaki tanácsadástól az épületek dokumentálásán át a teljes komplex tervezésig terjed. Szakmai kapcsolataink révén minden szakági munkarészhez tudunk kapcsolatot biztosítani.
+                        Bár székhelyünk és irodánk is a fővárosban található, hazánk egész területén tevékenykedünk. Referenciáink között a vízparti nyaralóktól, családi otthonoktól számos üzemanyagtöltő állomáson át, közintézményekig – úgy, mint piac vagy bölcsőde - talál megvalósult projekteket.    
+                    </div>
+                </div>
+                <div className="epitesz_szolgaltatas">
+                    <div className="epitesz_text_div_1">Szolgáltatásaink</div>
+                    <div className="epitesz_szolgaltatas_container">
+                        <div className="epitesz_szolgaltatas_div epitesz_szolgaltatas_group_1">
+                            <div className="epitesz_szolgaltatas_1 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_1} alt="Családi házak, otthonok tervezése" /></div>
+                                <div className="epitesz_szolgaltatas_text">Családi házak, otthonok tervezése</div>
+                            </div>
+                            <div className="epitesz_szolgaltatas_2 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_2} alt="Családi házak, otthonok tervezése" /></div>
+                                <div className="epitesz_szolgaltatas_text">Tervezői művezetés, építésszervezés</div>
+                            </div>
+                        </div>
+                        <div className="epitesz_szolgaltatas_div  epitesz_szolgaltatas_group_2">
+                            <div className="epitesz_szolgaltatas_3 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_3} alt="Nagyobb léptékű beruházások, középületek tervezése" /></div>
+                                <div className="epitesz_szolgaltatas_text">Nagyobb léptékű beruházások, középületek tervezése</div>
+                            </div>
+                            <div className="epitesz_szolgaltatas_4 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_4} alt="Szakági koordináció" /></div>
+                                <div className="epitesz_szolgaltatas_text">Szakági koordináció</div>
+                            </div>        
+                        </div>
+                        <div className="epitesz_szolgaltatas_div  epitesz_szolgaltatas_group_3">
+                            <div className="epitesz_szolgaltatas_5 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_5} alt="Enteriőr dizájn és bútortervezés" /></div>
+                                <div className="epitesz_szolgaltatas_text">Enteriőr dizájn és bútortervezés</div>
+                            </div>
+                            <div className="epitesz_szolgaltatas_6 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_6} alt="Műszaki tanácsadás vásárlás előtt vagy után" /></div>
+                                <div className="epitesz_szolgaltatas_text">Műszaki tanácsadás vásárlás előtt vagy után</div>
+                            </div>        
+                        </div>
+
+                        <div className="epitesz_szolgaltatas_div  epitesz_szolgaltatas_group_4">
+                            <div className="epitesz_szolgaltatas_7 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_7} alt="Gyártmány- és részlettervezés" /></div>
+                                <div className="epitesz_szolgaltatas_text">Gyártmány- és részlettervezés</div>
+                            </div>
+                            <div className="epitesz_szolgaltatas_8 epitesz_szolgaltatas_all">
+                                <div className="epitesz_szolgaltatas_picture_div"><img className="epitesz_szolgaltatas_picture" src={epitesz_szolgaltatas_8} alt="Arculattervezés és grafika" /></div>
+                                <div className="epitesz_szolgaltatas_text">Arculattervezés és grafika</div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <div className="csapatunk">
+                    <div className="epitesz_text_div_1">Csapatunk</div>
+                    <div className="csapat_container">
+                        <div className="csapat_div">
+                            <div className="csapat_picture_div"><img className="csapat_picture" src={csapat_1} alt="" /></div>
+                            <div className="csapat_leiras">
+                                <div className="csapat_nev">Angelidisz Aphrodite</div>
+                                <div className="csapat_beosztas">építész gyarkornok</div>
+                            </div>
+                        </div>
+                        <div className="csapat_div">
+                            <div className="csapat_picture_div"><img className="csapat_picture" src={csapat_2} alt="" /></div>
+                            <div className="csapat_leiras">
+                                <div className="csapat_nev">Szilágyi Ádám</div>
+                                <div className="csapat_beosztas">ügyvezető, okleveles építészmérnök</div>
+                            </div>
+                        </div>
+                        <div className="csapat_div">
+                            <div className="csapat_picture_div"><img className="csapat_picture" src={csapat_3} alt="" /></div>
+                            <div className="csapat_leiras">
+                                <div className="csapat_nev">Sziráki Gergő</div>
+                                <div className="csapat_beosztas">okleveles építész</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="referenciak">
+                <div className="epitesz_text_div_1">Referenciák
+                    <div className="epitesz_szolgaltatas_text_1 referenciak_text">Feltöltés alatt...</div>
+                </div>
+                </div>
+
+
+                <div className="partnereink">
+                <div className="epitesz_text_div_1">Partnereink
+                    {/* <p>Mobil Petrol cégcsoport</p>
+                    <p>Fodor Tamás @Forengs statika</p>
+                    <p>Varsányi Brigitta @Olinda Home</p>
+                    <p>Grabsits Viktor, statika @Grabau Kft.</p>
+                    <p>Mártonffy István, építészmérnök</p>
+                    <p>Varga Márton, épületgépészet @Renergon Kft.</p>
+                    <p>Incze Sándor, épületvillamosság</p>
+                    <p>Fekete Gábor @BLCD mérnökiroda</p>
+                    <p>SIP Europe s.r.o.</p>
+                    <p>Scaling Hub Zrt.</p>
+                    <p>GreenQuest Kft.</p>
+                    <p>La Terrazza</p>
+                    <p>Skytech-Invest Kft.</p>
+                    <p>Papp László faanyagvédelem – Faprotekt Bt.</p>
+                    <p>Kvarc Ingatlankezelő Kft.</p>
+                    <p>Varibon Kft.</p> */}
+                   <p>Mobil Petrol cégcsoport • 
+                    Fodor Tamás @Forengs statika • 
+                    Varsányi Brigitta @Olinda Home • 
+                    Grabsits Viktor, statika @Grabau Kft. • 
+                    Mártonffy István, építészmérnök • 
+                    Varga Márton, épületgépészet @Renergon Kft. • 
+                    Incze Sándor, épületvillamosság • 
+                    Fekete Gábor @BLCD mérnökiroda • 
+                    SIP Europe s.r.o. • 
+                    Scaling Hub Zrt. • 
+                    GreenQuest Kft. • 
+                    La Terrazza • 
+                    Skytech-Invest Kft. • 
+                    Papp László faanyagvédelem – Faprotekt Bt. • 
+                    Kvarc Ingatlankezelő Kft. • 
+                    Varibon Kft.</p> 
+                </div>
+                </div>
+
             </div>
             <Footer />
         </div>
