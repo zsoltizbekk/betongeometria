@@ -1018,6 +1018,9 @@ h5.reference_text {
   display: flex;
   flex-direction: row;
 }
+.butor_first_div_right {
+  width: 67%;
+}
 
 .butor_first_div_left {
   width: 33%;
