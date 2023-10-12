@@ -3,14 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Carousel} from "react-bootstrap";
 
 import csaladiImg from "../../assets/slide/csaladi.jpg";
-import enteriorImg from "../../assets/slide/enterior.jpg";
-import enterior2Img from "../../assets/slide/enterior2.jpg";
+import budakesziGorogImg from "../../assets/slide/budakeszi-gorog-reszlet.jpg";
+import debrecenFagImg from "../../assets/slide/debrecen-FAG-beton-homlokzat.jpg";
 import milpImg from "../../assets/slide/milp.jpg";
+import kivitelezesImg from "../../assets/slide/kivitelezes.jpg"
 
 const CarouselDiv = () => {
     return (
         <div className="carouselDiv">
-            <Carousel>
+            <Carousel fade={true}>
                     <Carousel.Item>
                     <img
                     className="d-block w-100"   
@@ -21,14 +22,14 @@ const CarouselDiv = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={enteriorImg}
+                    src={budakesziGorogImg}
                     alt="enterior"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={enterior2Img}
+                    src={debrecenFagImg}
                     alt="enterior"
                     />
                 </Carousel.Item>
@@ -36,6 +37,13 @@ const CarouselDiv = () => {
                     <img
                     className="d-block w-100"
                     src={milpImg}
+                    alt="Milp"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"
+                    src={kivitelezesImg}
                     alt="Milp"
                     />
                 </Carousel.Item>

@@ -1,6 +1,6 @@
 import React from "react";
-import {useMemo} from "react";
-import {GoogleMap, useLoadScript, Marker} from "@react-google-maps/api";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Carousel} from "react-bootstrap";
 
                                 
 import epitesz_szolgaltatas_1 from '../../../assets/epitesztervezes_logo/otthon_logo.png';
@@ -15,6 +15,20 @@ import epitesz_szolgaltatas_8 from '../../../assets/epitesztervezes_logo/splash.
 import csapat_1 from '../../../assets/epitesztervezes_csapat/1.jpg';
 import csapat_2 from '../../../assets/epitesztervezes_csapat/2.jpg';
 import csapat_3 from '../../../assets/epitesztervezes_csapat/3.jpg';
+
+import budakalasz from "../../../assets/referencia/budakalasz-muvezetes.JPG";
+import gorog from "../../../assets/referencia/budakeszi-gorog.JPG";
+import makkosi from "../../../assets/referencia/budakeszi-makkosi150.jpg";
+import rozsonyo12 from "../../../assets/referencia/budakeszi-rozsnyo12.JPG";
+import rozsonyo17 from "../../../assets/referencia/budakeszi-rozsnyo17.JPG";
+import mpetrol1 from "../../../assets/referencia/mpetrol-monor-mk1 - Kép1.jpg";
+import mpetrol2 from "../../../assets/referencia/mpetrol-monor-mk1 - Kép2.jpg";
+import mpetrol3 from "../../../assets/referencia/mpetrol.JPG";
+import breuer from "../../../assets/referencia/pecs-breuer-palyazat.jpg";
+import szekesfehervar from "../../../assets/referencia/szekesfehervar-krivanyi.JPG";
+import tiszafured1 from "../../../assets/referencia/tiszafured-sip-daruzas1.jpg";
+import tiszafured2 from "../../../assets/referencia/tiszafured-sip-kontener.jpg";
+import tiszafured3 from "../../../assets/referencia/tiszafured-sip-nyaralo.jpg";
 
 
 import RouteSwitch from "../RouteSwitch";
@@ -119,31 +133,197 @@ const Epitesz = () => {
                 </div>
 
                 <div className="referenciak">
-                <div className="epitesz_text_div_1">Referenciák
-                    <div className="epitesz_szolgaltatas_text_1 referenciak_text">Feltöltés alatt...</div>
+                    <div className="epitesz_text_div_1">Referenciák</div>
+                    <div className="referencia_text">Feltöltés alatt...</div>
+
+                    <div className="referenciak_div">
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false} indicatorLabels={true}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={budakalasz}
+                                        alt="Budakalasz"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Budakalász_Művezetés_2023</h5>
+                                        </Carousel.Caption>
+                                        
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={rozsonyo12}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Budakeszi Rozsonyo u. 12_Művezetés_2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={makkosi}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Budakeszi Makkosi u._Művezetés_2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={true} fade={true} touch={true} interval={3000}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={mpetrol1}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">M.Petrol</h5>
+                                            <h5 className="reference_text">Építésztervezés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={mpetrol2}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">M.Petrol</h5>
+                                            <h5 className="reference_text">Építésztervezés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={mpetrol3}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">M.Petrol</h5>
+                                            <h5 className="reference_text">Építésztervezés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={gorog}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Budakeszi Görög u.</h5>
+                                            <h5 className="reference_text">Művezetés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={rozsonyo17}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Budakeszi Rozsonyo u. 17.</h5>
+                                            <h5 className="reference_text">Művezetés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={breuer}
+                                        alt="Breuer"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Breuer Pécs.</h5>
+                                            <h5 className="reference_text">Pályázati munka</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={true} fade={true} touch={true} interval={3000}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={tiszafured1}
+                                        alt="Tiszafüred"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Tiszafüred</h5>
+                                            <h5 className="reference_text">Művezetés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={tiszafured2}
+                                        alt="Tiszafüred"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Tiszafüred</h5>
+                                            <h5 className="reference_text">Művezetés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={tiszafured3}
+                                        alt="Tiszafüred"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Tiszafüred</h5>
+                                            <h5 className="reference_text">Művezetés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={szekesfehervar}
+                                        alt="Székesfehérvár"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Szekesfehérvár Kriványi u.</h5>
+                                            <h5 className="reference_text">Művezetés</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                        </div>
+                        </div>
                 </div>
-                </div>
+                
 
 
                 <div className="partnereink">
                 <div className="epitesz_text_div_1">Partnereink
-                    {/* <p>Mobil Petrol cégcsoport</p>
-                    <p>Fodor Tamás @Forengs statika</p>
-                    <p>Varsányi Brigitta @Olinda Home</p>
-                    <p>Grabsits Viktor, statika @Grabau Kft.</p>
-                    <p>Mártonffy István, építészmérnök</p>
-                    <p>Varga Márton, épületgépészet @Renergon Kft.</p>
-                    <p>Incze Sándor, épületvillamosság</p>
-                    <p>Fekete Gábor @BLCD mérnökiroda</p>
-                    <p>SIP Europe s.r.o.</p>
-                    <p>Scaling Hub Zrt.</p>
-                    <p>GreenQuest Kft.</p>
-                    <p>La Terrazza</p>
-                    <p>Skytech-Invest Kft.</p>
-                    <p>Papp László faanyagvédelem – Faprotekt Bt.</p>
-                    <p>Kvarc Ingatlankezelő Kft.</p>
-                    <p>Varibon Kft.</p> */}
-                   <p>Mobil Petrol cégcsoport • 
+                   <div className="partnereink_text">Mobil Petrol cégcsoport • 
                     Fodor Tamás @Forengs statika • 
                     Varsányi Brigitta @Olinda Home • 
                     Grabsits Viktor, statika @Grabau Kft. • 
@@ -156,13 +336,13 @@ const Epitesz = () => {
                     GreenQuest Kft. • 
                     La Terrazza • 
                     Skytech-Invest Kft. • 
-                    Papp László faanyagvédelem – Faprotekt Bt. • 
+                    Papp László faanyagvédelem @Faprotekt Bt. • 
                     Kvarc Ingatlankezelő Kft. • 
-                    Varibon Kft.</p> 
+                    Varibon Kft.</div> 
                 </div>
                 </div>
 
-            </div>
+                
             <Footer />
         </div>
     );
