@@ -143,10 +143,10 @@ const Epitesz = () => {
                                         <img
                                         className="d-block w-100"   
                                         src={budakalasz}
-                                        alt="Budakalasz"
+                                        alt="Tervezői művezetés _ Budakalász _ 2023"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Budakalász_Művezetés_2023</h5>
+                                            <h5 className="reference_text">Tervezői művezetés _ Budakalász _ 2023</h5>
                                         </Carousel.Caption>
                                         
                                     </Carousel.Item>
@@ -158,10 +158,10 @@ const Epitesz = () => {
                                         <img
                                         className="d-block w-100"   
                                         src={rozsonyo12}
-                                        alt="Budakeszi"
+                                        alt="Családi lakóház _ Budakeszi _ 2020"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Budakeszi Rozsonyo u. 12_Művezetés_2023</h5>
+                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2020</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
@@ -172,10 +172,10 @@ const Epitesz = () => {
                                         <img
                                         className="d-block w-100"   
                                         src={makkosi}
-                                        alt="Budakeszi"
+                                        alt="Családi lakóház _ Budakeszi _ 2021"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Budakeszi Makkosi u._Művezetés_2023</h5>
+                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2021</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
@@ -186,33 +186,30 @@ const Epitesz = () => {
                                         <img
                                         className="d-block w-100"   
                                         src={mpetrol1}
-                                        alt="Budakeszi"
+                                        alt="Üzemanyagtöltő-állomás _ 2022"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">M.Petrol</h5>
-                                            <h5 className="reference_text">Építésztervezés</h5>
+                                            <h5 className="reference_text">Üzemanyagtöltő-állomás _ 2022</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                     <Carousel.Item>
                                         <img
                                         className="d-block w-100"   
                                         src={mpetrol2}
-                                        alt="Budakeszi"
+                                        alt="Üzemanyagtöltő-állomás _ 2022"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">M.Petrol</h5>
-                                            <h5 className="reference_text">Építésztervezés</h5>
+                                            <h5 className="reference_text">Üzemanyagtöltő-állomás _ 2022</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                     <Carousel.Item>
                                         <img
                                         className="d-block w-100"   
                                         src={mpetrol3}
-                                        alt="Budakeszi"
+                                        alt="Üzemanyagtöltő-állomás _ 2022"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">M.Petrol</h5>
-                                            <h5 className="reference_text">Építésztervezés</h5>
+                                            <h5 className="reference_text">Üzemanyagtöltő-állomás _ 2022</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
@@ -226,8 +223,7 @@ const Epitesz = () => {
                                         alt="Budakeszi"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Budakeszi Görög u.</h5>
-                                            <h5 className="reference_text">Művezetés</h5>
+                                            <h5 className="reference_text">Családi ház bővítés _ Budakeszi _ 2019</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
@@ -241,8 +237,7 @@ const Epitesz = () => {
                                         alt="Budakeszi"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Budakeszi Rozsonyo u. 17.</h5>
-                                            <h5 className="reference_text">Művezetés</h5>
+                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2021</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
@@ -253,11 +248,10 @@ const Epitesz = () => {
                                         <img
                                         className="d-block w-100"   
                                         src={breuer}
-                                        alt="Breuer"
+                                        alt="Breuer Marcell emlékoszlop - tervpályázat _ Pécs _ 2023"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Breuer Pécs.</h5>
-                                            <h5 className="reference_text">Pályázati munka</h5>
+                                            <h5 className="reference_text">Breuer Marcell emlékoszlop - tervpályázat _ Pécs _ 2023</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
@@ -269,33 +263,30 @@ const Epitesz = () => {
                                         <img
                                         className="d-block w-100"   
                                         src={tiszafured1}
-                                        alt="Tiszafüred"
+                                        alt="Apartmanházak _ Tiszafüred _ 2022"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Tiszafüred</h5>
-                                            <h5 className="reference_text">Művezetés</h5>
+                                            <h5 className="reference_text">Apartmanházak _ Tiszafüred _ 2022</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                     <Carousel.Item>
                                         <img
                                         className="d-block w-100"   
                                         src={tiszafured2}
-                                        alt="Tiszafüred"
+                                        alt="Apartmanházak _ Tiszafüred _ 2022"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Tiszafüred</h5>
-                                            <h5 className="reference_text">Művezetés</h5>
+                                            <h5 className="reference_text">Apartmanházak _ Tiszafüred _ 2022</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                     <Carousel.Item>
                                         <img
                                         className="d-block w-100"   
                                         src={tiszafured3}
-                                        alt="Tiszafüred"
+                                        alt="Apartmanházak _ Tiszafüred _ 2022"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Tiszafüred</h5>
-                                            <h5 className="reference_text">Művezetés</h5>
+                                            <h5 className="reference_text">Apartmanházak _ Tiszafüred _ 2022</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
@@ -306,11 +297,10 @@ const Epitesz = () => {
                                         <img
                                         className="d-block w-100"   
                                         src={szekesfehervar}
-                                        alt="Székesfehérvár"
+                                        alt="Családi lakóház _ Székesfehérvár _ 2021"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Szekesfehérvár Kriványi u.</h5>
-                                            <h5 className="reference_text">Művezetés</h5>
+                                            <h5 className="reference_text">Családi lakóház _ Székesfehérvár _ 2021</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
