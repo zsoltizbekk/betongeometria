@@ -145,8 +145,8 @@ const Epitesz = () => {
                                         src={budakalasz}
                                         alt="Tervezői művezetés _ Budakalász _ 2023"
                                         />
-                                        <Carousel.Caption>
-                                            <h5 className="reference_text">Tervezői művezetés _ Budakalász _ 2023</h5>
+                                        <Carousel.Caption className="carousel_text">
+                                            <p className="reference_text">Tervezői művezetés _ Budakalász _ 2023</p>
                                         </Carousel.Caption>
                                         
                                     </Carousel.Item>

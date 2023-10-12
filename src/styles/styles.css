@@ -668,10 +668,33 @@ body {
   gap: 5px;
 }
 
+.carousel_text {
+  margin: 0px !important;
+}
+
+div.carousel-caption {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+div.carousel-indicators {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+div.carousel-indicators > button {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+h5.reference_text {
+  margin: 0px;
+}
+
 .reference_text {
   width: 100%;
   margin: 0, auto;
-  margin-bottom: 2px;
+  padding: 0px;
   font-size: 13px;
   color: var(--main-font-color);
   background-color: #f7f7f7d7;
