@@ -29,7 +29,12 @@ import szekesfehervar from "../../../assets/referencia/szekesfehervar-krivanyi.J
 import tiszafured1 from "../../../assets/referencia/tiszafured-sip-daruzas1.jpg";
 import tiszafured2 from "../../../assets/referencia/tiszafured-sip-kontener.jpg";
 import tiszafured3 from "../../../assets/referencia/tiszafured-sip-nyaralo.jpg";
-
+import sukoro1 from "../../../assets/referencia/sukoro-1.jpg";
+import sukoro2 from "../../../assets/referencia/sukoro-2.jpg";
+import sukoro3 from "../../../assets/referencia/sukoro-3.jpg";
+import bpVI1 from "../../../assets/referencia/bp-vi-homlokzat.jpg";
+import bpVI2 from "../../../assets/referencia/bp-vi-homlokzatfoto.jpg";
+import bimbo101 from "../../../assets/referencia/bp-bimbo101-telepuleskepi.jpg";
 
 import RouteSwitch from "../RouteSwitch";
 
@@ -134,52 +139,90 @@ const Epitesz = () => {
 
                 <div className="referenciak">
                     <div className="epitesz_text_div_1">Referenciák</div>
-                    <div className="referencia_text">Feltöltés alatt...</div>
+                    <div className="referencia_text">a teljesség igénye nélkül</div>
 
                     <div className="referenciak_div">
-                            <div className="referece_carusel">
-                                <Carousel controls={false} indicators={false} indicatorLabels={true}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"   
-                                        src={budakalasz}
-                                        alt="Tervezői művezetés _ Budakalász _ 2023"
-                                        />
-                                        <Carousel.Caption>
-                                            <h5 className="reference_text">Tervezői művezetés _ Budakalász _ 2023</h5>
-                                        </Carousel.Caption>
-                                        
-                                    </Carousel.Item>
-                                </Carousel>
-                            </div>
+                        {/* 1 */}
                             <div className="referece_carusel">
                                 <Carousel controls={false} indicators={false}>
                                     <Carousel.Item>
                                         <img
                                         className="d-block w-100"   
-                                        src={rozsonyo12}
-                                        alt="Családi lakóház _ Budakeszi _ 2020"
+                                        src={gorog}
+                                        alt="Családi ház bővítés _ Budakeszi _ 2019"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2020</h5>
+                                            <h5 className="reference_text">Családi ház bővítés _ Budakeszi _ 2019</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
                             </div>
+                        {/* 2 */}
                             <div className="referece_carusel">
-                                <Carousel controls={false} indicators={false}>
+                            <Carousel controls={false} indicators={true} fade={true} touch={true} interval={3000}>
                                     <Carousel.Item>
                                         <img
                                         className="d-block w-100"   
-                                        src={makkosi}
-                                        alt="Családi lakóház _ Budakeszi _ 2021"
+                                        src={sukoro1}
+                                        alt="Erdei apartman házak _ Sukoró _ 2023"
                                         />
                                         <Carousel.Caption>
-                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2021</h5>
+                                            <h5 className="reference_text">Erdei apartman házak _ Sukoró _ 2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={sukoro2}
+                                        alt="Erdei apartman házak _ Sukoró _ 2023"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Erdei apartman házak _ Sukoró _ 2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={sukoro3}
+                                        alt="Erdei apartman házak _ Sukoró _ 2023"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Erdei apartman házak _ Sukoró _ 2023</h5>
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
                             </div>
+
+                            
+                        {/* 3 */}
+
+                            <div className="referece_carusel">
+                            <Carousel controls={false} indicators={true} fade={true} touch={true} interval={3000}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={bpVI1}
+                                        alt="Településképi bejelentés _ Budapest VI. _ 2023"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Településképi bejelentés _ Budapest VI. _ 2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={bpVI2}
+                                        alt="Településképi bejelentés _ Budapest VI. _ 2023"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Településképi bejelentés _ Budapest VI. _ 2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                        {/* 4 */}
                             <div className="referece_carusel">
                                 <Carousel controls={false} indicators={true} fade={true} touch={true} interval={3000}>
                                     <Carousel.Item>
@@ -214,49 +257,8 @@ const Epitesz = () => {
                                     </Carousel.Item>
                                 </Carousel>
                             </div>
-                            <div className="referece_carusel">
-                                <Carousel controls={false} indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"   
-                                        src={gorog}
-                                        alt="Budakeszi"
-                                        />
-                                        <Carousel.Caption>
-                                            <h5 className="reference_text">Családi ház bővítés _ Budakeszi _ 2019</h5>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                </Carousel>
-                            </div>
-                            <div className="referece_carusel">
-                                <Carousel controls={false} indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"   
-                                        src={rozsonyo17}
-                                        alt="Budakeszi"
-                                        />
-                                        <Carousel.Caption>
-                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2021</h5>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                </Carousel>
-                            </div>
-                            <div className="referece_carusel">
-                                <Carousel controls={false} indicators={false}>
-                                    <Carousel.Item>
-                                        <img
-                                        className="d-block w-100"   
-                                        src={breuer}
-                                        alt="Breuer Marcell emlékoszlop - tervpályázat _ Pécs _ 2023"
-                                        />
-                                        <Carousel.Caption>
-                                            <h5 className="reference_text">Breuer Marcell emlékoszlop - tervpályázat _ Pécs _ 2023</h5>
-                                        </Carousel.Caption>
-                                    </Carousel.Item>
-                                </Carousel>
-                            </div>
                             
+                        {/* 5 */}
                             <div className="referece_carusel">
                                 <Carousel controls={false} indicators={true} fade={true} touch={true} interval={3000}>
                                     <Carousel.Item>
@@ -291,6 +293,7 @@ const Epitesz = () => {
                                     </Carousel.Item>
                                 </Carousel>
                             </div>
+                        {/* 6 */}
                             <div className="referece_carusel">
                                 <Carousel controls={false} indicators={false}>
                                     <Carousel.Item>
@@ -305,6 +308,106 @@ const Epitesz = () => {
                                     </Carousel.Item>
                                 </Carousel>
                             </div>
+                        {/* 7 */}
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={bimbo101}
+                                        alt="Településképi bejelentés _ Budapest II. _ 2023"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Településképi bejelentés _ Budapest II. _ 2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+
+                        {/* 8 */}
+
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={breuer}
+                                        alt="Breuer Marcell emlékoszlop - tervpályázat _ Pécs _ 2023"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Breuer Marcell emlékoszlop - tervpályázat _ Pécs _ 2023</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+
+                        {/* 9 */}
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={makkosi}
+                                        alt="Családi lakóház _ Budakeszi _ 2021"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2021</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                        
+                        {/* 10 */}
+
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={rozsonyo12}
+                                        alt="Családi lakóház _ Budakeszi _ 2020"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2020</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+
+                        {/* 11 */}
+                        
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false} indicatorLabels={true}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={budakalasz}
+                                        alt="Tervezői művezetés _ Budakalász _ 2023"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Tervezői művezetés _ Budakalász _ 2023</h5>
+                                        </Carousel.Caption>
+                                        
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                            
+                        {/* 12 */}
+                            
+                            <div className="referece_carusel">
+                                <Carousel controls={false} indicators={false}>
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block w-100"   
+                                        src={rozsonyo17}
+                                        alt="Budakeszi"
+                                        />
+                                        <Carousel.Caption>
+                                            <h5 className="reference_text">Családi lakóház _ Budakeszi _ 2021</h5>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>                        
                         </div>
                         </div>
                 </div>
@@ -312,24 +415,25 @@ const Epitesz = () => {
 
 
                 <div className="partnereink">
-                <div className="epitesz_text_div_1">Partnereink
-                   <div className="partnereink_text">Mobil Petrol cégcsoport • 
-                    Fodor Tamás @Forengs statika • 
-                    Varsányi Brigitta @Olinda Home • 
-                    Grabsits Viktor, statika @Grabau Kft. • 
-                    Mártonffy István, építészmérnök • 
-                    Varga Márton, épületgépészet @Renergon Kft. • 
-                    Incze Sándor, épületvillamosság • 
-                    Fekete Gábor @BLCD mérnökiroda • 
-                    SIP Europe s.r.o. • 
-                    Scaling Hub Zrt. • 
-                    GreenQuest Kft. • 
-                    La Terrazza • 
-                    Skytech-Invest Kft. • 
-                    Papp László faanyagvédelem @Faprotekt Bt. • 
-                    Kvarc Ingatlankezelő Kft. • 
-                    Varibon Kft.</div> 
-                </div>
+                    <div className="epitesz_text_div_1">Partnereink
+                    <div className="partnereink_text">Mobil Petrol cégcsoport • 
+                        Fodor Tamás @Forengs statika • 
+                        Varsányi Brigitta @Olinda Home • 
+                        Grabsits Viktor, statika @Grabau Kft. • 
+                        Mártonffy István, építészmérnök • 
+                        Varga Márton, épületgépészet @Renergon Kft. • 
+                        Incze Sándor, épületvillamosság • 
+                        Fekete Gábor @BLCD mérnökiroda • 
+                        SIP Europe s.r.o. • 
+                        Scaling Hub Zrt. • 
+                        GreenQuest Kft. • 
+                        La Terrazza • 
+                        Skytech-Invest Kft. • 
+                        Papp László faanyagvédelem @Faprotekt Bt. • 
+                        Kvarc Ingatlankezelő Kft. • 
+                        Varibon Kft.</div> 
+                    </div>
+                    <div className="epitesz_contactBtn_div"><button className="epiteszContactBtn" onClick={()=>{window.location = "mailto:hello@betongeometria.hu"}}>Vegye fel velünk a kapcsolatot!</button></div>
                 </div>
 
                 

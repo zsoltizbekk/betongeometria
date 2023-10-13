@@ -12,18 +12,18 @@ const CarouselDiv = () => {
     return (
         <div className="carouselDiv">
             <Carousel fade={true}>
-                    <Carousel.Item>
-                    <img
-                    className="d-block w-100"   
-                    src={csaladiImg}
-                    alt="csaladi haz"
-                    />
-                </Carousel.Item>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={budakesziGorogImg}
                     alt="enterior"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100"   
+                    src={csaladiImg}
+                    alt="csaladi haz"
                     />
                 </Carousel.Item>
                 <Carousel.Item>

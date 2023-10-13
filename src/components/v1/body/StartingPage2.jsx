@@ -12,7 +12,7 @@ const StartingPage2 = () => {
             <div className="starting_page_2_container">
                 <div className="starting_page_2_body">
                 <div onClick={()=>{window.location.href="/epitesz"}} className="starting_page_2_epitesztervezes">
-                    <div className="starting_page_2_epitesztervezes_content">Éptésztervezés</div>
+                    <div className="starting_page_2_epitesztervezes_content">Építésztervezés</div>
                     </div>
                     <div className="starting_page_2_betontermekek">
                         <div onClick={()=>{window.location.href="/beton"}} className="starting_page_2_betontermekek_content">Betontermékek</div>

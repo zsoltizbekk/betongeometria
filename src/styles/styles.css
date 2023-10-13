@@ -509,7 +509,6 @@ body {
   font-family: barlow_extra_light, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
-  padding: 5px;
 }
 
 .epitesz_container {
@@ -649,7 +648,7 @@ body {
 }
 
 .referenciak {
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 20px;
   max-width: 1200px;
 }
@@ -707,12 +706,39 @@ h5.reference_text {
 
 .partnereink {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .partnereink_text {
   margin-top: 20px;
   font-size: 14px;
+}
+
+.epitesz_contactBtn_div {
+  margin: auto;
+  justify-self: center;
+  width: 250px;
+}
+
+.epiteszContactBtn {
+  transition: 0.5s ease;
+  justify-self: center;
+  cursor: pointer;
+  border: none;
+  background-color: #fe6060;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: bree_light_oblique, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--main-bg-color);
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.epiteszContactBtn:hover {
+  transition: 0.5s ease;
+  background-color: #b44343;
 }
 
 @media (max-width: 576px) {
@@ -739,7 +765,6 @@ h5.reference_text {
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
       "Helvetica Neue", sans-serif;
     font-size: 16px;
-    padding: 5px;
   }
 
   .epitesz_container {
@@ -752,6 +777,8 @@ h5.reference_text {
     font-size: 20px;
     color: var(--main-font-color);
     background-color: var(--main-bg-color);
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .epitesz_szolgaltatas {
@@ -813,7 +840,7 @@ h5.reference_text {
     width: 48%;
   }
   .partnereink {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 }
 

@@ -21,7 +21,7 @@ const StartingPage = () => {
             <div className="starting_page_container">
                 <div className="starting_page_body">
                 <div onClick={()=>{window.location.href="/epitesz"}} className="starting_page_epitesztervezes">
-                    <div className="starting_page_epitesztervezes_content">Éptésztervezés</div>
+                    <div className="starting_page_epitesztervezes_content">Építésztervezés</div>
                     </div>
                     <div className="starting_page_betontermekek">
                         <div onClick={()=>{window.location.href="/beton"}} className="starting_page_betontermekek_content">Betontermékek</div>

@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="footer">
             <footer className="text-center text-lg-start">
             <div className="footer_left">
-             ©2022 by Betongeometria.
+             ©2023 by Betongeometria.
              </div>
              <div className="footer_mid">
              <a href="mailto:hello@betongeometria.hu">hello@betongeometria.hu</a>
